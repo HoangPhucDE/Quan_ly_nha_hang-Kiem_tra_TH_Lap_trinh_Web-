@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Nhà hàng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Danh sách món ăn</h1>
+  <img src="restaurant.jpg" alt="Ảnh nhà hàng" class="anh-dau-trang">
+
+  <table id="bang-mon-an">
+    <thead>
+      <tr>
+        <th>Mã món</th>
+        <th>Tên món</th>
+        <th>Giá (VND)</th>
+        <th>Ảnh món</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MA01</td>
+        <td>Phở bò</td>
+        <td>45000</td>
+        <td><img src="pho.jpg" class="anh-thumbnail"></td>
+        <td><button class="xoa">Xoá</button></td>
+      </tr>
+      <tr>
+        <td>MA02</td>
+        <td>Bún chả</td>
+        <td>40000</td>
+        <td><img src="buncha.jpg" class="anh-thumbnail"></td>
+        <td><button class="xoa">Xoá</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form id="form-mon-an">
+    <input type="text" id="ma-mon" placeholder="Mã món">
+    <input type="text" id="ten-mon" placeholder="Tên món">
+    <input type="number" id="gia-mon" placeholder="Giá món">
+    <input type="file" id="anh-mon">
+    <button type="button" id="nut-them">Thêm món</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
